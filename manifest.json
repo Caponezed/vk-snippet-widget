@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "VK snippet widget",
+  "description": "Добавляет меню сниппетов для ВК в личных сообщениях (Для активации нажмите ctrl + shift)",
+  "version": "0.1.1",
+  "content_scripts": [
+    {
+      "matches": ["https://vk.com/im?*"],
+      "css": ["vk-snippet-widget.css"],
+      "js": ["vk-snippet-widget.js"]
+    }
+  ]
+}

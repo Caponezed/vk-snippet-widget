@@ -1,0 +1,31 @@
+body {
+  background-color: grey;
+}
+
+.vk-snippet-widget {
+  position: absolute;
+  top: auto;
+  display: flex;
+  gap: 2px;
+  flex-direction: column;
+  margin-top: 4px;
+  width: 100%;
+}
+.vk-snippet-widget__div {
+  display: flex;
+  gap: 2px;
+}
+.vk-snippet-widget__button {
+  flex-grow: 1;
+  padding: 2px;
+}
+/* Input default arrows reset */
+.vk-snippet-widget__input[type="number"],
+.vk-snippet-widget__input[type="number"]:hover,
+.vk-snippet-widget__input[type="number"]:focus {
+  -moz-appearance: textfield;
+}
+.vk-snippet-widget__input[type="number"]::-webkit-outer-spin-button,
+.vk-snippet-widget__input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
