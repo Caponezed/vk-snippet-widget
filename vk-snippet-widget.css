@@ -1,14 +1,8 @@
-body {
-  background-color: grey;
-}
-
 .vk-snippet-widget {
-  position: absolute;
-  top: auto;
   display: flex;
   gap: 2px;
   flex-direction: column;
-  margin-top: 4px;
+  margin-top: 8px;
   width: 100%;
 }
 .vk-snippet-widget__div {
