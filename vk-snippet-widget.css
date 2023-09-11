@@ -9,6 +9,12 @@
   display: flex;
   gap: 2px;
 }
+.vk-snippet-widget__input {
+  width: 100%;
+}
+.vk-snippet-widget__select {
+  max-width: 30%;
+}
 .vk-snippet-widget__button {
   flex-grow: 1;
   padding: 2px;
