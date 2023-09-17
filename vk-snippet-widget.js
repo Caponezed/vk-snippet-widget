@@ -136,9 +136,11 @@ function createVkSnippetWidget() {
   }
   function addVkWidget() {
     try {
+      console.log("AddVkWidget function has been called");
       let vkRightMenu = document.querySelector(
         "#content > div > div.im-right-menu > div.page_block.ui_rmenu._im_right_menu.ui_rmenu_pr"
       );
+      if (!vkRightMenu) return;
       vkTextBox = document.querySelector("div[role='textbox']");
       sendButton = document.querySelector(
         "#content > div > div > div.im-page--history.page_block._im_page_history > div.im-page-history-w > div.im-page--chat-input._im_chat_input_w > div.im-chat-input.clear_fix._im_chat_input_parent > div.im-chat-input--textarea.fl_l._im_text_input._emoji_field_wrap._voice_field_wrap > div.im-chat-input--txt-wrap._im_text_wrap > button"
@@ -149,7 +151,6 @@ function createVkSnippetWidget() {
           pageCountInput.value = "";
         }
       });
-      if (!vkRightMenu) return;
       vkRightMenu.append(vkWidget);
     } catch (err) {
       return err;
@@ -181,6 +182,7 @@ function createVkSnippetWidget() {
 
   // Adds a widget with CTRL + SHIFT (any) to the page if it hasn`t showed up
   document.addEventListener("keydown", (e) => {
+    console.log("KeyDownEventListener has been called");
     if (e.ctrlKey && e.shiftKey) addVkWidget(e);
   });
   // Adds a widget to the page as the page is fully loaded and if VK messages are open (and if nothing is broken)
